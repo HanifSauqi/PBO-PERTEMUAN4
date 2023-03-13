@@ -29,7 +29,7 @@ public class Perpustakaan {
     }
 
 
-    void cekDataBukuAdaAtauTidak(String idBukuYangDiCari) {
+    void cekData(String idBukuYangDiCari) {
         boolean bukuDitemukan = false;
         for (int i = 0; i < listBuku.size(); i++) {
             Buku currentBuku = listBuku.get(i);
@@ -65,5 +65,4 @@ public class Perpustakaan {
             System.out.println("-Buku dengan keyword " + keyword + " tidak ditemukan.");
         }
     }
-
 }
